@@ -34,6 +34,7 @@ export class AfterContentComponent implements AfterContentChecked, AfterContentI
   }
 
   ngAfterContentChecked() {
+  console.log("hi !");
     // contentChild is updated after the content has been checked
     if (this.prevHero === this.contentChild.hero) {
       this.logIt('AfterContentChecked (no change)');
